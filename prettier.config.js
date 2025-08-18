@@ -1,5 +1,5 @@
-module.exports = {
-    semi: true,
-    singleQuote: true,
-    trailingComma: "all",
+export default {
+  semi: true,
+  singleQuote: true,
+  trailingComma: 'all',
 };
