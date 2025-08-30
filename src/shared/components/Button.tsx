@@ -23,13 +23,13 @@ export default function Button({
     <>
       <button
         type={type}
-        className="icon-button"
+        className={icon && title ? "icon-text-button" : "icon-button"}
         onClick={onClickCallback}
       >
+        {icon}
         <span className="absolute -inset-1.5" />
         <span className="sr-only">{screenreaderText}</span>
-        <span>{title}</span>
-        {icon}
+        {title && <span className="px-1">{title}</span>}        
       </button>
     </>
   );
