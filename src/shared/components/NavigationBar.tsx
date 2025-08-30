@@ -20,7 +20,7 @@ function classNames(...classes: unknown[]) {
 
 const data: ButtonData = {
   type: 'button',
-  icon: <Cog8ToothIcon aria-hidden="true" className="size-6" />,
+  icon: <Cog8ToothIcon aria-hidden="true" className="size-5" />,
   screenreaderText: 'View notifications',
 };
 
@@ -111,6 +111,7 @@ export default function NavigationBar() {
               <div className="flex items-center px-4">
                 <Button
                   type={data.type}
+                  title="Einstellungen"
                   icon={data.icon}
                   screenreaderText={data.screenreaderText}
                   onClickCallback={() => setIsDrawerOpen(true)}
